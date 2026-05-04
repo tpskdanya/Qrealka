@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Устройства</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html">← Назад</a>
+  <div id="cart-count">🛒 0</div>
+</header>
+
+<h2>Устройства</h2>
+
+<div id="devices-container" class="grid"></div>
+
+<!-- МОДАЛКА -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <img id="modal-img">
+    <p id="modal-desc"></p>
+    <select id="color-select"></select>
+    <p id="modal-price"></p>
+    <button onclick="addToCart()">В корзину</button>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>
